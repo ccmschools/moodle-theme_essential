@@ -88,7 +88,7 @@ function theme_essential_insert_analytics_tracking() {
         } else {
             $addition = '';
         }
-		
+
         if ($useuserid) {
             global $USER;
             if ($USER->username) {
