@@ -88,11 +88,11 @@ function theme_essential_insert_analytics_tracking() {
         } else {
             $addition = '';
         }
-
+		
         if ($useuserid) {
             global $USER;
-            if ($USER->id) {
-                $userid = "".PHP_EOL."_paq.push(['setUserId', '".$USER->id."']);";
+            if ($USER->username) {
+                $userid = "".PHP_EOL."_paq.push(['setUserId', '".$USER->username."']);";
             } else {
                 $userid = "";
             }
